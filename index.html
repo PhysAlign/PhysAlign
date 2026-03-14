@@ -591,7 +591,9 @@
         <div class="column is-four-fifths">
           <img src="static/images/pipeline.jpg" alt="PhysAlign Framework Pipeline" loading="lazy" style="max-width: 85%; margin: 0 auto; display: block;"/>
           <h2 class="subtitle has-text-centered">
-            <strong>Figure 2: PhysAlign Framework.</strong> Our data generation pipeline leverages physical simulator (i.e. Blender) to generate synthetic videos with 3D physical ground truth. Our method aligns the DiT latent features with both (i) physical knowledge feature by DINOv3, and (ii) 3D geometric feature encoded from synthetic ground truth (e.g., depth). This unified alignment internalizes both physical laws and visual fidelity for I2V generation task.
+            <strong>Figure 2: PhysAlign Framework.
+              
+            </strong> Our data generation pipeline leverages physical simulator (i.e. Blender) to generate synthetic videos with 3D physical ground truth. Our method aligns the DiT latent features with both (i) physical knowledge feature by V-JEPA2, and (ii) 3D geometric feature encoded from synthetic ground truth (e.g., depth). This unified alignment internalizes both physical laws and visual fidelity for I2V generation task.
           </h2>
         </div>
       </div>
@@ -770,7 +772,7 @@
           <li><strong>Physics-Coherent Generation:</strong> Produces videos that obey fundamental physics laws including consistent gravitational acceleration, physically plausible collisions, and momentum-conserving trajectories.</li>
           <li><strong>3D Perceptual Fidelity:</strong> Respects 3D spatial structure and perspective, including correct occlusion ordering and size changes as objects move relative to the camera.</li>
           <li><strong>Synthetic Data Pipeline:</strong> Leverages Blender to generate large-scale synthetic training data with accurate 3D and physical annotations.</li>
-          <li><strong>Unified Alignment:</strong> Aligns DiT latent features with both physical knowledge features (via DINOv3) and 3D geometric features from ground truth.</li>
+          <li><strong>Unified Alignment:</strong> Aligns DiT latent features with both physical knowledge features (via V-JEPA2) and 3D geometric features from ground truth.</li>
           <li><strong>SOTA Performance:</strong> Significantly outperforms existing VDMs on tasks requiring complex physical reasoning and temporal stability.</li>
         </ul>
       </div>
